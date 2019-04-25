@@ -69,6 +69,17 @@ class TimerAppState extends State<TimerApp> {
                   },
                 ),
               ),
+              Container(
+                child: RaisedButton(
+                  child: Text('CLEAR'),
+                  onPressed: () {
+                    setState(() {
+                      isActive = false;
+                      secondsPassed = 0;
+                    });
+                  },
+                ),
+              ),
             ],
           ),
         ),
